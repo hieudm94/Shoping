@@ -1,0 +1,185 @@
+/* CART CSS  */
+html, body {
+    color: #fff;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    overflow-x: hidden;
+}
+/* .cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+} */
+
+.cart table {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+    /* height: 50%; */
+    /* top: 10%; */
+    flex-direction: column;
+}
+
+.cart thead tr th:first-child {
+    text-align: left;
+}
+
+.cart table tr td {
+    padding: 12px 0;
+}
+
+.cart thead tr th:last-child, .cart tbody tr td:last-child {
+    text-align: right;
+}
+
+/* ---------------- Làm cho cart nằm 1 bên ----- */
+
+.cart {
+    display: flex;
+    position: absolute;
+    background: #010101;
+    opacity: 0.95;
+    height: 100%;
+    width: 60%;
+    flex-direction: column;
+    top: 0;
+    right: -100%; 
+    /* hhihi */
+    z-index: 10;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+
+.cart-icon i {
+    cursor: pointer;
+    position: absolute;
+    right: 11rem;
+    top: 3.2rem;
+    color: black;
+    font-size: 2rem;
+}
+
+.cart-icon i:hover {
+    color: white;
+}
+
+.total-qty {
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: 600;
+    top: 3rem;
+    right: 10.5rem;
+    user-select: none;
+}
+
+.cart i.fa-times {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+
+}
+
+.cart h2 {
+    align-self: center;
+    transform: translateY(1rem);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.final {
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+}
+
+.final button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.btn_them {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: 1px solid orangered;
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.btn_them:disabled {
+    color: black;
+    box-shadow: inset 20em 0 0 0 white;
+}
+
+.final button:hover, .btn_them:hover {
+    color: black;
+    box-shadow: inset 20em 0 0 0 white;
+}
+
+.btn-amount {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0;
+}
+
+button {
+    background: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    padding: 2px 5px;
+}
+
+.price-total p {
+    align-self: flex-end;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 20px;
+    margin-bottom: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.product_name {
+    height: 77px;
+}
